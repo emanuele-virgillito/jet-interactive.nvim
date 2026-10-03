@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <title>Jet Interactive</title>
+    <link rel="stylesheet" href="/vendor/katex.min.css">
+    <link rel="stylesheet" href="/vendor/jupyter-widgets.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Jet Interactive</h1>
+        <span id="connection" class="status">connecting</span>
+      </div>
+      <nav>
+        <label>Session <select id="kernel-filter"><option value="">All sessions</option></select></label>
+        <label><input id="autoscroll" type="checkbox" checked> Auto-scroll</label>
+        <button id="clear" type="button">Clear</button>
+      </nav>
+    </header>
+    <main id="feed"><p class="empty">No executions yet.</p></main>
+    <script src="/vendor/purify.min.js"></script>
+    <script src="/vendor/marked.min.js"></script>
+    <script src="/vendor/katex.min.js"></script>
+    <script src="/vendor/plotly.min.js"></script>
+    <script src="/vendor/jupyter-widgets.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

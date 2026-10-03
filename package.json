@@ -1,0 +1,13 @@
+{
+  "name": "jet-interactive-web-assets",
+  "private": true,
+  "scripts": {
+    "build:widgets": "esbuild bridge/widget-runtime.js --bundle --format=iife --global-name=JetWidgets --outfile=bridge/assets/vendor/jupyter-widgets.js --loader:.css=css --loader:.svg=dataurl --loader:.eot=dataurl --loader:.woff=dataurl --loader:.woff2=dataurl --loader:.ttf=dataurl"
+  },
+  "dependencies": {
+    "@jupyter-widgets/html-manager": "1.0.15"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

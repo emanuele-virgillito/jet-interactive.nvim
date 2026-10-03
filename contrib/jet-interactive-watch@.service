@@ -1,0 +1,12 @@
+[Unit]
+Description=Jet Interactive watcher for SSH host %i
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/jet-interactive watch %i --browser auto
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
